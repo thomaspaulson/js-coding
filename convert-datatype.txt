@@ -1,0 +1,100 @@
+
+As a programming language, JavaScript is very tolerant of unexpected values. Because of this, JavaScript will attempt to convert unexpected values rather than reject them outright. This implicit conversion is known as type coercion.
+
+
+Some methods will automatically convert values in order to make use of them. The alert() method takes a string as its parameter, but it will automatically convert other types into strings. So, we can pass a number value to the method:
+
+
+alert(8.5);
+
+
+// Subtraction
+"15" - "10";
+
+// Modulo
+"15" % "10";
+
+// When working with strings, + stands for concatenation
+"2" + "3";
+
+Output
+"23"
+
+convert to string
+//////
+String() or n.toString()
+
+
+String(true); // "true"
+String(49);   // '49'
+
+
+let odyssey = 2001;
+console.log(typeof odyssey);
+
+Output
+number
+
+odyssey = String(odyssey);  // "2001"
+console.log(typeof odyssey);
+
+Output
+string
+
+
+let blows = 400;
+blows.toString();
+
+Output
+"400"
+
+Alternatively, we can put a value within parentheses rather than a variable with n.toString():
+/////-
+
+(1776).toString();          // returns "1776"
+(false).toString();         // returns "false"
+(100 + 200).toString();     // returns "300"
+
+Converting Values to Numbers
+///////////
+
+Number("1984");
+
+Output
+1984
+
+let dalmatians = "101";
+Number(dalmatians);
+
+Number(" ");    // returns 0
+Number("");     // returns 0
+
+
+Be aware that strings of non-numbers will convert to NaN 
+///////////////
+
+
+Number("twelve");   // returns NaN
+Number("20,000");   // returns NaN
+Number("2 3");      // returns NaN
+Number("11-11-11"); // returns NaN
+
+
+Number(false);      // returns 0
+Number(true);       // returns 1
+
+
+// Converting Values to Booleans
+
+Boolean(0);         // returns false
+Boolean("");        // returns false
+Boolean(undefined); // returns false
+Boolean(NaN);       // returns false
+Boolean(null);      // returns false
+
+Boolean(2000);      // returns true
+Boolean(" ");       // returns true
+Boolean("Maniacs"); // returns true
+
+Boolean("0");   // returns true
+

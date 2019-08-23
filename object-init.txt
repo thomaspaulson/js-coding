@@ -1,0 +1,90 @@
+// Initialize object literal with curly brackets
+const objectLiteral = {};
+
+// Initialize object constructor with new Object
+const objectConstructor = new Object();
+
+
+// Initialize gimli object
+const gimli = {
+    name: "Gimli",
+    race: "dwarf",
+    weapon: "axe",
+    greet: function() {
+        return `Hi, my name is ${this.name}!`;
+    },
+};
+
+console.log(gimli);
+
+//output
+{name: "Gimli", race: "dwarf", weapon: "axe", greet: ƒ}
+
+Accessing Object Properties
+1. Dot notation: .
+2. Bracket notation: []
+
+// Retrieve the value of the weapon property
+gimli.weapon; //output axe
+// Retrieve the value of the weapon property
+gimli["weapon"]; //output axe
+
+calling function
+
+gimli.greet();
+
+
+Adding and Modifying Object Properties
+
+// Add new age property to gimli
+gimli.age = 139;
+// Add new age property to gimli
+gimli["age"] = 139;
+
+// access
+gimli.age;
+
+A method can also be added to the object by using the same process.
+
+// Add new fight method to gimli
+gimli.fight = function() {
+    return `Gimli attacks with an ${this.weapon}.`;
+}
+
+gimli.fight();
+
+
+
+Removing Object Properties
+
+delete gimli.weapon;
+
+console
+gimli;
+
+
+Looping Through Object Properties
+
+const gimli = {
+    name: "Gimli",
+    race: "dwarf",
+    weapon: "battle axe",
+};
+
+// Iterate through properties of gimli
+for (let key in gimli) {
+  console.log(gimli[key]);
+}
+
+
+// Get keys and values of gimli properties
+for (let key in gimli) {
+  console.log(key.toUpperCase() + ':', gimli[key]);
+}
+
+
+Object.keys(gimli); 
+// output ["name", "race", "weapon"]
+
+
+

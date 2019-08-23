@@ -1,0 +1,43 @@
+alert("Hello, World!");
+
+console.log(2 + 6);
+
+console.log(34348.2342343403285953845 * 4310.23409128534);
+
+let d = new Date();
+console.log("Today's date is " + d);
+
+Working with an HTML File
+index.html
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+script.js
+/////////
+
+let d = new Date();
+document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+
+document.body.style.backgroundColor = "lightblue";
+
+document.body.style.color = "white";
+
+
+let p = document.createElement("P");
+let t = document.createTextNode("Paragraph text.");
+p.appendChild(t);
+document.body.appendChild(p);
+	

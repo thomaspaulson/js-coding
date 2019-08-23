@@ -1,0 +1,77 @@
+
+Dynamic Typing
+/////
+
+let t = 16;         // t is a number
+let t = "Teresa";   // t is a string
+let t = true;       // t is a Boolean
+let t;              // t is undefined
+
+Numbers
+////////
+JavaScript has only one number type, there is no separate designation for integers and floating-point numbers
+Because of this, numbers can be written in JavaScript with or without decimals:
+
+let num1 = 93;
+let num2 = 93.00;
+
+
+Scientific exponential notation can be used in JavaScript to abbreviate very large or small numbers,
+as in the following examples:
+
+let num3 = 987e8;       // 98700000000
+let num4 = 987e-8;      // 0.00000987
+
+Numbers in JavaScript are considered to be accurate up to 15 digits. 
+That means that numbers will be rounded after the 16th digit is reached:
+
+let num5 = 999999999999999;     // remains as 999999999999999
+let num6 = 9999999999999999;    // rounded up to 10000000000000000
+
+In addition to representing numbers, the JavaScript number type also has three symbolic values available:
+
+Infinity 
+-Infinity
+NaN 
+
+let num7 = 5 / 0;   // will return Infinity
+let num8 = -5 / 0;  // will return -Infinity
+
+In technical terms, Infinity will be displayed when a number exceeds the number 1.797693134862315E+308, which represents the upper limit in JavaScript.
+
+Similarly, -Infinity will be displayed when a number goes beyond the lower limit of -1.797693134862316E+308.
+
+let x = 20 / "Shark";   // x will be NaN
+
+
+
+let y = 20 / "5";   // y will be 4
+
+
+let a = NaN;
+let b = 37;
+let c = a + b;  // c will be NaN
+
+String
+///////
+
+let hw = 'Hello, World!';
+
+let hw = "Hello, World!";
+
+
+Booleans
+///////
+
+true / false
+
+
+Arrays
+/////////
+
+let fish = ["shark", "cuttlefish", "clownfish", "eel"];
+
+Objects
+//////
+
+let sammy = {firstName:"Sammy", lastName:"Shark", color:"blue", location:"ocean"};
