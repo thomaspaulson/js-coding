@@ -2,6 +2,8 @@ alert("Hello, World!");
 
 console.log(2 + 6);
 
+can also try
+---------
 console.log(34348.2342343403285953845 * 4310.23409128534);
 
 let d = new Date();

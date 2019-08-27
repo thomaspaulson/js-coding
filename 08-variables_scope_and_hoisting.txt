@@ -1,0 +1,50 @@
+// Assign the string value Sammy to the username identifier
+var username = "sammy_shark";
+
+// Check if variable is equal to value
+if (username === "sammy_shark") {
+  console.log(true);
+}
+Output // true
+
+
+// Assignment of various variables
+var name = "Sammy";
+var spartans = 300;
+var kingdoms = [ "mammals", "birds", "fish" ];
+var poem = { roses: "red", violets: "blue" }; 
+var success = true;
+var nothing = null;
+
+// Send spartans variable to the console
+console.log(spartans); // outputs 300
+
+
+Naming Variables
+/////////
+
+Variable names can consist only of letters (a-z), numbers (0-9), dollar sign symbols ($), and underscores (_)
+Variable names cannot contain any whitespace characters (tabs or spaces)
+Numbers cannot begin the name of any variable
+There are several reserved keywords which cannot be used as the name of a variable
+Variable names are case sensitive
+
+
+
+// Initialize a global variable
+var creature = "wolf";
+
+
+// Initialize a global variable
+var species = "human";
+
+function transform() {
+  // Initialize a local, function-scoped variable
+  var species = "werewolf";
+  console.log(species);
+}
+
+// Log the global and local variable
+console.log(species);
+transform();
+console.log(species);

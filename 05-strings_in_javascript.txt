@@ -1,0 +1,82 @@
+
+Creating and Viewing the Output of Strings
+//////////
+
+'This string uses single quotes.';
+
+"This string uses double quotes.";
+
+
+Storing a String in a Variable
+////////////////
+
+const newString = "This is a string assigned to a variable.";
+
+
+concat
+////
+
+"Sea" + "horse";
+
+We join strings and variables containing string values with concatenation.
+////////
+
+
+const poem = "The Wide Ocean";
+const author = "Pablo Neruda";
+
+const favePoem = "My favorite poem is " + poem + " by " + author ".";
+
+Variables in Strings with Template Literals
+/////
+const favePoem = `My favorite poem is ${poem} by ${author}.`;
+
+
+Escaping Quotes and Apostrophes in Strings
+///////
+const brokenString = 'I'm a broken string';
+
+console.log(brokenString); //output error
+
+other options
+/////////
+"We're safely using an apostrophe in double quotes."
+
+Using the Escape Character (\)
+////////
+'We\'re safely using an apostrophe in single quotes.'
+"Then he said, \"Hello, World!\"";
+
+
+Using Template Literals
+/////////
+`We're safely using apostrophes and "quotes" in a template literal.`;
+
+
+Long Strings and Newlines
+/////////////
+const threeLines = "This is a string\nthat spans across\nthree lines.";
+
+const threeLines = "This is a string\n" +
+"that spans across\n" +
+"three lines.";
+
+
+Instead of concatenating multiple strings, we can use the \ escape character to escape the newline.
+////
+const threeLines = "This is a string\n\
+that spans across\n\
+three lines.";
+
+/// other option
+
+const threeLines = `This is a string
+that spans across
+three lines.`;
+
+// output
+Output
+This is a string
+that spans across
+three lines.
+
