@@ -1,0 +1,102 @@
+Addition and Subtraction
+
+10 + 20;
+
+// 30
+
+let x = 1 + "1";
+
+console.log(x);
+typeof x; //'string'
+
+A common reason to use addition or subtraction in JavaScript would be to scroll to an id minus the height in pixels of a fixed navigation bar.
+
+
+function scrollToId() {
+    const navHeight = 60;
+    window.scrollTo(0, window.pageYOffset - navHeight);
+}
+
+window.addEventListener('hashchange', scrollToId);
+
+let x = 20;
+let y = 5;
+
+// Multiply x by y to get the product
+let z = x * y;
+
+console.log(z); 
+//100
+
+Mutiplication
+/////////
+
+const price = 26.5;    // Price of item before tax
+const taxRate = 0.082; // 8.2% tax rate
+
+// Calculate total after tax to two decimal places
+let totalPrice = price + (price * taxRate);
+totalPrice.toFixed(2);
+
+console.log("Total:", totalPrice); //Total: 28.67
+
+Modulo
+/////////
+
+9 % 3; // Output 0
+
+// Initialize function to test if a number is even
+const isEven = x => {
+    // If the remainder after dividing by two is 0, return true
+    if (x % 2 === 0) {
+        return true;
+    }
+    // If the number is odd, return false
+    return false;
+}
+
+// Test the number
+isEven(12); // output true
+
+Exponentiation
+///////////
+10 ** 5;  //100000
+Another way of writing this is with the Math.pow() method.
+
+Increment and Decrement
+////////
+
+7++ // error
+
+// Set a variable
+let x = 7;
+
+// Use the prefix increment operation
+let prefix = ++x;
+
+console.log(prefix); // 8
+
+// Set a variable
+let y = 7;
+
+// Use the prefix increment operation
+let postfix = y++;
+
+console.log(postfix); // 7
+
+// Run a loop ten times
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+Assignment Operators
+///////
+let age = 27;
+
+Operator Precedence
+/////////////
+
+// First multiply 3 by 5, then add 10
+10 + 3 * 5;
+
+
